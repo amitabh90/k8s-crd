@@ -1,0 +1,7 @@
+apiVersion: myk8s.local/v1
+kind: keyvaluestore
+metadata:
+  name: k8s-kv-store-crd
+spec:
+  field1: "AccountBalance"
+  field2: 1000
