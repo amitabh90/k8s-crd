@@ -3,7 +3,7 @@
 # How to deploy
 
 # amit@k8s-master-01:~/k8s$ kubectl apply -f kv-crd.yml
-customresourcedefinition.apiextensions.k8s.io/keyvaluestores.myk8s.local created
+`` customresourcedefinition.apiextensions.k8s.io/keyvaluestores.myk8s.local created
 
 # amit@k8s-master-01:~/k8s$ kubectl apply -f create-resource.yml 
 keyvaluestore.myk8s.local/k8s-kv-store-crd created
