@@ -3,16 +3,23 @@
 # How to deploy
 
 # amit@k8s-master-01:~/k8s$ kubectl apply -f kv-crd.yml
-`` customresourcedefinition.apiextensions.k8s.io/keyvaluestores.myk8s.local created
+```
+customresourcedefinition.apiextensions.k8s.io/keyvaluestores.myk8s.local created
+```
 
 # amit@k8s-master-01:~/k8s$ kubectl apply -f create-resource.yml 
+```
 keyvaluestore.myk8s.local/k8s-kv-store-crd created
+```
 
 # amit@k8s-master-01:~/k8s$ kubectl get crd
+```
 NAME                                         CREATED AT
 keyvaluestores.myk8s.local                   2025-03-06T16:01:05Z
+```
 
 # amit@k8s-master-01:~/k8s$ kubectl describe crd keyvaluestores.myk8s.local
+```
 Name:         keyvaluestores.myk8s.local
 Namespace:    
 Labels:       <none>
@@ -77,12 +84,17 @@ Status:
   Stored Versions:
     v1
 Events:  <none>
+```
 
 # amit@k8s-master-01:~/k8s$ kubectl get keyvaluestores
+```
 NAME               AGE
 k8s-kv-store-crd   3m20s
+```
 
 # amit@k8s-master-01:~/k8s$ kubectl describe keyvaluestores/k8s-kv-store-crd
+
+```
 Name:         k8s-kv-store-crd
 Namespace:    default
 Labels:       <none>
@@ -98,3 +110,4 @@ Spec:
   field1:  AccountBalance
   field2:  1000
 Events:    <none>
+```
